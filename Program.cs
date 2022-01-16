@@ -29,6 +29,10 @@ namespace sda_csharp_exercises
             {
                 Console.WriteLine("Wykładnik jest ujemny :(");
             }
+            else if (secondNumber == 0)
+            {
+                Console.WriteLine("1");
+            }
             else
             {
                 Console.WriteLine(GetPowerOf(firstNumber, secondNumber));
