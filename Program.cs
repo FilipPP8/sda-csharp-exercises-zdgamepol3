@@ -8,7 +8,7 @@ namespace sda_csharp_exercises
         {
             int result = firstNumber;
 
-            for (int i = 0; i <= sequenceLength; i++)
+            for (int i = 0; i < sequenceLength; i++)
             {
                 Console.Write(result + " ");
                 result += difference;
