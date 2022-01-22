@@ -4,6 +4,24 @@ namespace sda_csharp_exercises
 {
     class Program
     {
+
+        private static char CharToLeet (char input)
+        {
+            char[] leetLetters = { '4', '3', '1', '0', '$' };
+            char[] naturalLetters = { 'a', 'e', 'i', 'o', 's' };
+
+            char output= input;
+
+            for (int j = 0; j < naturalLetters.Length; j++)
+            {
+                if (input == naturalLetters[j])
+                {
+                    output = leetLetters[j];
+                }
+            }
+
+            return output;
+        }
         static string ToL33tSpeak(string password)
         {
             char[] leetLetters = { '4', '3', '1', '0', '$' };
@@ -15,13 +33,9 @@ namespace sda_csharp_exercises
 
             for (int i = 0; i < passwordLetters.Length; i++)
             {
-                for (int j = 0; j < naturalLetters.Length; j++)
-                {
-                    if(passwordLetters[i] == naturalLetters[j])
-                    {
-                        passwordLetters[i] = leetLetters[j];
-                    }
-                }
+
+                passwordLetters[i] = CharToLeet(passwordLetters[i]);
+
             }
             
             string l33tPassword = new string(passwordLetters);
