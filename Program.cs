@@ -15,25 +15,12 @@ namespace sda_csharp_exercises
 
             for (int i = 0; i < passwordLetters.Length; i++)
             {
-                if (passwordLetters[i] == naturalLetters[0])
+                for (int j = 0; j < naturalLetters.Length; j++)
                 {
-                    passwordLetters[i] = leetLetters[0];
-                }
-                else if (passwordLetters[i] == naturalLetters[1])
-                {
-                    passwordLetters[i] = leetLetters[1];
-                }
-                else if (passwordLetters[i] == naturalLetters[2])
-                {
-                    passwordLetters[i] = leetLetters[2];
-                }
-                else if (passwordLetters[i] == naturalLetters[3])
-                {
-                    passwordLetters[i] = leetLetters[3];
-                }
-                else if (passwordLetters[i] == naturalLetters[4])
-                {
-                    passwordLetters[i] = leetLetters[4];
+                    if(passwordLetters[i] == naturalLetters[j])
+                    {
+                        passwordLetters[i] = leetLetters[j];
+                    }
                 }
             }
             
@@ -53,25 +40,12 @@ namespace sda_csharp_exercises
 
             for (int i = 0; i < passwordLetters.Length; i++)
             {
-                if (passwordLetters[i] == leetLetters[0])
+                for (int j = 0; j < leetLetters.Length; j++)
                 {
-                    passwordLetters[i] = naturalLetters[0];
-                }
-                else if (passwordLetters[i] == leetLetters[1])
-                {
-                    passwordLetters[i] = naturalLetters[1];
-                }
-                else if (passwordLetters[i] == leetLetters[2])
-                {
-                    passwordLetters[i] = naturalLetters[2];
-                }
-                else if (passwordLetters[i] == leetLetters[3])
-                {
-                    passwordLetters[i] = naturalLetters[3];
-                }
-                else if (passwordLetters[i] == leetLetters[4])
-                {
-                    passwordLetters[i] = naturalLetters[4];
+                    if (passwordLetters[i] == leetLetters[j])
+                    {
+                        passwordLetters[i] = naturalLetters[j];
+                    }
                 }
             }
 
