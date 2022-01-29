@@ -71,9 +71,14 @@ namespace sda_csharp_exercises
             Console.WriteLine("Wywołano konstruktor z parametrami z klasy Person");
         }
 
-        public void WhoAmI()
+        public override string ToString() // odziedziczona funkcja po klasie Object
         {
-            Console.WriteLine($"My name is {FirstName} {LastName}.");
+            return $"My name is {FirstName} {LastName}.";
+        }
+
+        public virtual void WhoAmI()
+        {
+            Console.WriteLine(this.ToString());
         }
 
     }

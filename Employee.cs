@@ -21,5 +21,17 @@ namespace sda_csharp_exercises
         {
             Console.WriteLine("Wywołano konstruktor bezparametrowy z klasy Employee");
         }
+
+        public override void WhoAmI()
+        {
+            base.WhoAmI();
+            Console.WriteLine("Moje zarobki to: " + Salary);
+            Console.WriteLine("Całkowite zarobki: " + GetTotalSalary());
+        }
+
+        public virtual decimal GetTotalSalary()
+        {
+            return Salary;
+        }
     }
 }
