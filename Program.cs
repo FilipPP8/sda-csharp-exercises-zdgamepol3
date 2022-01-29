@@ -30,6 +30,8 @@ namespace sda_csharp_exercises
             }
 
             bank.GetValue();
+
+            Console.WriteLine("Koniec.");
         }
     }
 }
