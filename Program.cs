@@ -19,6 +19,14 @@ namespace sda_csharp_exercises
 
             //point1.ShowCurrentPosition();
 
+            Console.WriteLine("-----");
+
+            Point point4 = new Point(4, 5);
+            Point point5 = new Point(11, 23);
+            Point point6 = new Point(13, 1);
+
+            Point.Collinear(point4, point5, point6);
+
 
 
         }

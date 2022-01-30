@@ -35,9 +35,9 @@ namespace sda_csharp_exercises
             int a = point1.X * (point2.Y - point3.Y) + point2.X * (point3.Y - point1.Y) + point3.X * (point1.Y - point2.Y);
 
             if (a == 0)
-                Console.Write("Yes");
+                Console.WriteLine("Yes");
             else
-                Console.Write("No");
+                Console.WriteLine("No");
         }
     }
 }
