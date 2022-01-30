@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace sda_csharp_exercises
 {
@@ -43,6 +39,21 @@ namespace sda_csharp_exercises
             }
         }
 
+        public static void GetBiggestRectangle (Rectangle[] rectangles)
+        {
+            int[] areas = new int[rectangles.Length];
+
+            for (int i = 0; i < rectangles.Length; i++)
+            {
+                areas[i] = rectangles[i].GetArea();
+            }
+
+            Array.Sort(areas);
+            Array.Reverse(areas);
+
+            Console.WriteLine("Największe pole wynosi: " + areas[0]);
+
+        }
 
 }
 }
