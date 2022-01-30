@@ -27,5 +27,17 @@ namespace sda_csharp_exercises
         {
             Console.WriteLine("Aktualna pozycja punktu to " + X + " oraz " + Y);
         }
+
+
+        public static void Collinear(Point point1, Point point2, Point point3)
+        {
+
+            int a = point1.X * (point2.Y - point3.Y) + point2.X * (point3.Y - point1.Y) + point3.X * (point1.Y - point2.Y);
+
+            if (a == 0)
+                Console.Write("Yes");
+            else
+                Console.Write("No");
+        }
     }
 }
