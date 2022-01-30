@@ -49,9 +49,9 @@ namespace sda_csharp_exercises
             }
 
             Array.Sort(areas);
-            Array.Reverse(areas);
+            //Array.Reverse(areas);
 
-            Console.WriteLine("Największe pole wynosi: " + areas[0]);
+            Console.WriteLine("Największe pole wynosi: " + areas[areas.Length-1]);
 
         }
 
