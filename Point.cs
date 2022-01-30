@@ -29,15 +29,19 @@ namespace sda_csharp_exercises
         }
 
 
-        public static void Collinear(Point point1, Point point2, Point point3)
+        public static bool Collinear(Point point1, Point point2, Point point3)
         {
 
             int a = point1.X * (point2.Y - point3.Y) + point2.X * (point3.Y - point1.Y) + point3.X * (point1.Y - point2.Y);
 
             if (a == 0)
-                Console.WriteLine("Yes");
+            {
+                return true;
+            }
             else
-                Console.WriteLine("No");
+            {
+                return false;
+            }
         }
 
         //Three points lie on the straight line if the area formed by the triangle of these three points is zero.
