@@ -17,15 +17,15 @@ namespace sda_csharp_exercises
             Y = y;
         }
 
-        public static void Move(Point point, int moveX, int moveY)
+        public void Move(int moveX, int moveY)
         {
-            point.X += moveX;
-            point.Y += moveY;
+            X += moveX;
+            Y += moveY;
         }
 
-        public static void ShowCurrentPosition(Point point)
+        public void ShowCurrentPosition()
         {
-            Console.WriteLine("Aktualna pozycja punktu to " + point.X + " oraz " +point.Y);
+            Console.WriteLine("Aktualna pozycja punktu to " + X + " oraz " + Y);
         }
     }
 }

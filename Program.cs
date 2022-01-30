@@ -8,11 +8,11 @@ namespace sda_csharp_exercises
         {
             Point point = new Point(5, 4);
 
-            Point.ShowCurrentPosition(point);
+            point.ShowCurrentPosition();
 
-            Point.Move(point, 3, 2);
+            point.Move(3, 2);
 
-            Point.ShowCurrentPosition(point);
+            point.ShowCurrentPosition();
 
 
         }
