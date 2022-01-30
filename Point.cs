@@ -39,5 +39,7 @@ namespace sda_csharp_exercises
             else
                 Console.WriteLine("No");
         }
+
+        //Three points lie on the straight line if the area formed by the triangle of these three points is zero.
     }
 }
