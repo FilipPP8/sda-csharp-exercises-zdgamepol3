@@ -15,10 +15,7 @@ namespace sda_csharp_exercises
 
             Rectangle[] rectangles = { rectangle1, rectangle2 };
 
-            foreach(Rectangle rectangle in rectangles)
-            {
-                Rectangle.PrintInfo(rectangle);
-            }
+            Rectangle.PrintInfoForAll(rectangles);
 
 
 

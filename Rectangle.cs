@@ -32,5 +32,17 @@ namespace sda_csharp_exercises
             Console.WriteLine("Pole powierzchni tego prostkąta wynosi: " + rectangle.GetArea());
             Console.WriteLine("Obwód tego prostokąta wynosi: " + rectangle.GetCircumference());
         }
-    }
+
+        Rectangle[] rectangles;
+
+        public static void PrintInfoForAll (Rectangle[] rectangles)
+        {
+            foreach (Rectangle rectangle in rectangles)
+            {
+                Rectangle.PrintInfo(rectangle);
+            }
+        }
+
+
+}
 }
